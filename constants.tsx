@@ -26,25 +26,25 @@ export const SERVICES: Service[] = [
     
 export const PORTFOLIO_CATEGORIES = [
   {
-    title: "Music Reels",
+    title: "Birthday Reels",
     items: [
       {
         id: 1,
-        title: "Banana Leaf Music Reel",
-        thumbnail: "/thumbnails/music1.jpg",
-        videoId: "cTlIb6nYOE2",
+        title: "Birthday Highlight 1",
+        thumbnail: "/thumbnails/birthday-1.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
       },
       {
         id: 2,
-        title: "Beat Drop",
-        thumbnail: "/thumbnails/music2.jpg",
-        videoId: "REPLACE_2",
+        title: "Birthday Highlight 2",
+        thumbnail: "/thumbnails/birthday-2.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
       },
       {
         id: 3,
-        title: "DJ Promo",
-        thumbnail: "/thumbnails/music3.jpg",
-        videoId: "REPLACE_3",
+        title: "Birthday Highlight 3",
+        thumbnail: "/thumbnails/birthday-3.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
       },
     ],
   },
@@ -54,25 +54,98 @@ export const PORTFOLIO_CATEGORIES = [
     items: [
       {
         id: 4,
-        title: "Bride Entry",
-        thumbnail: "/thumbnails/wedding1.jpg",
-        videoId: "REPLACE_4",
+        title: "Wedding Teaser 1",
+        thumbnail: "/thumbnails/wedding-1.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
       },
       {
         id: 5,
-        title: "Couple Edit",
-        thumbnail: "/thumbnails/wedding2.jpg",
-        videoId: "REPLACE_5",
+        title: "Wedding Teaser 2",
+        thumbnail: "/thumbnails/wedding-2.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
       },
       {
         id: 6,
-        title: "Reception",
-        thumbnail: "/thumbnails/wedding3.jpg",
-        videoId: "REPLACE_6",
+        title: "Wedding Teaser 3",
+        thumbnail: "/thumbnails/wedding-3.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+    ],
+  },
+
+  {
+    title: "Building Site Reels",
+    items: [
+      {
+        id: 7,
+        title: "Construction Progress 1",
+        thumbnail: "/thumbnails/building-1.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+      {
+        id: 8,
+        title: "Site Timelapse",
+        thumbnail: "/thumbnails/building-2.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+      {
+        id: 9,
+        title: "Final Reveal",
+        thumbnail: "/thumbnails/building-3.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+    ],
+  },
+
+  {
+    title: "Commercial Outlet Reels",
+    items: [
+      {
+        id: 10,
+        title: "Store Promo 1",
+        thumbnail: "/thumbnails/commercial-1.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+      {
+        id: 11,
+        title: "Brand Walkthrough",
+        thumbnail: "/thumbnails/commercial-2.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+      {
+        id: 12,
+        title: "Launch Reel",
+        thumbnail: "/thumbnails/commercial-3.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+    ],
+  },
+
+  {
+    title: "Music Videos",
+    items: [
+      {
+        id: 13,
+        title: "Music Video Edit 1",
+        thumbnail: "/thumbnails/music-1.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+      {
+        id: 14,
+        title: "Beat Drop Reel",
+        thumbnail: "/thumbnails/music-2.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      },
+      {
+        id: 15,
+        title: "Artist Promo",
+        thumbnail: "/thumbnails/music-3.jpg",
+        videoUrl: "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
       },
     ],
   },
 ];
+
 
     description: 'Capturing the energy and key moments of your events with fast-paced cuts.',
     deliverables: ['30-60 sec Reel', 'Color Grading', 'Sound Design'],
