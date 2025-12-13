@@ -46,11 +46,16 @@ const Hero: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-amber-500 to-purple-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
           <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
              {/* Placeholder for Atharva's photo */}
-            <img 
-              src="https://www.instagram.com/reel/DPaw4TnDGUG/?igsh=cDJsaWhvbG1xNDg2" 
-              alt="Atharva Raorane" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 hover:opacity-100"
-            />
+            <div className="w-full h-full overflow-hidden rounded-lg group">
+  <iframe 
+    src="https://www.instagram.com/reel/DPaw4TnDGUG/embed" 
+    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 hover:opacity-100"
+    frameborder="0" 
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
+
             {/* Overlay Elements */}
             <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
                <div className="flex items-center gap-3">
