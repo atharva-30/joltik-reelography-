@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
              {/* Placeholder for Atharva's photo */}
             <img 
-              src="https://picsum.photos/800/1000?grayscale" 
+              src="https://www.instagram.com/reel/DPaw4TnDGUG/?igsh=cDJsaWhvbG1xNDg2" 
               alt="Atharva Raorane" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 hover:opacity-100"
             />
