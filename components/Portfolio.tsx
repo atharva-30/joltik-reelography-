@@ -16,8 +16,8 @@ const Portfolio: React.FC = () => {
           subtitle="Tap to play reels — smooth scrolling enabled"
         />
 
-        {/* Section Tabs */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
+        {/* Section Tabs - Horizontal Carousel */}
+        <div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12">
           {PORTFOLIO_REELS.map((section, index) => (
             <button
               key={section.id}
@@ -25,11 +25,13 @@ const Portfolio: React.FC = () => {
                 setActiveIndex(index);
                 setPlayingIndex(null);
               }}
-              className={`px-6 py-3 rounded-full text-sm font-bold border transition ${
-                activeIndex === index
-                  ? "bg-white text-black border-white"
-                  : "border-neutral-700 text-neutral-400 hover:text-white"
-              }`}
+              className={`flex-shrink-0 px-6 py-3 font-bold rounded-full
+                text-white transition-transform duration-300
+                ${
+                  activeIndex === index
+                    ? "scale-105 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600"
+                    : "bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600/70 hover:scale-105"
+                }`}
             >
               {section.title}
             </button>
