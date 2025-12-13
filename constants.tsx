@@ -18,48 +18,54 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
+export const PORTFOLIO_REELS = [
   {
-    title: 'Birthday Reels',
-    items: [
-      { id: 'b1', title: 'Sarah\'s 21st Bash', thumbnail: 'https://picsum.photos/400/600?random=1', views: '15k', link: '#' },
-      { id: 'b2', title: 'Rohan\'s Surprise', thumbnail: 'https://picsum.photos/400/600?random=2', views: '8.5k', link: '#' },
-      { id: 'b3', title: 'Sweet 16 Montage', thumbnail: 'https://picsum.photos/400/600?random=3', views: '12k', link: '#' },
-    ]
+    id: 1,
+    title: "Birthday Reels",
+    videos: [
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+    ],
   },
   {
-    title: 'Wedding Reels',
-    items: [
-      { id: 'w1', title: 'Royal Jaipur Wedding', thumbnail: 'https://picsum.photos/400/600?random=4', views: '45k', link: '#' },
-      { id: 'w2', title: 'Beachside Vows', thumbnail: 'https://picsum.photos/400/600?random=5', views: '32k', link: '#' },
-      { id: 'w3', title: 'Haldi Ceremony Highlights', thumbnail: 'https://picsum.photos/400/600?random=6', views: '28k', link: '#' },
-    ]
+    id: 2,
+    title: "Wedding Reels",
+    videos: [
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+    ],
   },
   {
-    title: 'Building Site Reels',
-    items: [
-      { id: 're1', title: 'Skyline Luxury Apts', thumbnail: 'https://picsum.photos/400/600?random=7', views: '10k', link: '#' },
-      { id: 're2', title: 'Modern Villa Tour', thumbnail: 'https://picsum.photos/400/600?random=8', views: '5k', link: '#' },
-      { id: 're3', title: 'Commercial Complex', thumbnail: 'https://picsum.photos/400/600?random=9', views: '7.2k', link: '#' },
-    ]
+    id: 3,
+    title: "Building Site Reels",
+    videos: [
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+    ],
   },
   {
-    title: 'Commercial Outlet Reels',
-    items: [
-      { id: 'c1', title: 'Urban Coffee House', thumbnail: 'https://picsum.photos/400/600?random=10', views: '55k', link: '#' },
-      { id: 'c2', title: 'Neon Gym Promo', thumbnail: 'https://picsum.photos/400/600?random=11', views: '22k', link: '#' },
-      { id: 'c3', title: 'Fashion Boutique Launch', thumbnail: 'https://picsum.photos/400/600?random=12', views: '18k', link: '#' },
-    ]
+    id: 4,
+    title: "Commercial Outlet Reels",
+    videos: [
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+    ],
   },
   {
-    title: 'Music Videos',
-    items: [
-      { id: 'm1', title: 'Midnight Drive - MV', thumbnail: 'https://picsum.photos/400/600?random=13', views: '120k', link: '#' },
-      { id: 'm2', title: 'Rap Cypher Edit', thumbnail: 'https://picsum.photos/400/600?random=14', views: '80k', link: '#' },
-      { id: 'm3', title: 'Acoustic Cover', thumbnail: 'https://picsum.photos/400/600?random=15', views: '45k', link: '#' },
-    ]
+    id: 5,
+    title: "Music Videos",
+    videos: [
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0",
+    ],
   },
 ];
+
 
 export const SERVICES: Service[] = [
   {
