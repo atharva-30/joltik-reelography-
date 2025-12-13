@@ -30,9 +30,9 @@ export const PORTFOLIO_CATEGORIES = [
     items: [
       {
         id: 1,
-        title: "Hip Hop Reel",
+        title: "Banana Leaf Music Reel",
         thumbnail: "/thumbnails/music1.jpg",
-        videoId: "cTlIXfnYO3k",
+        videoId: "cTlIb6nYOE2",
       },
       {
         id: 2,
