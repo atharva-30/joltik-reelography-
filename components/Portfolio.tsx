@@ -67,10 +67,11 @@ const Portfolio: React.FC = () => {
           </button>
         </div>
 
-        {/* GRID */}
+        {/* REELS GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activeCategory.items.map((item) => {
             const isPlaying = playingId === item.id;
+            const embedUrl = `https://go.screenpal.com/player/${item.videoId}?autoplay=1&muted=1&loop=1&controls=0`;
 
             return (
               <div
@@ -86,7 +87,7 @@ const Portfolio: React.FC = () => {
                       className="w-full h-full object-cover opacity-70"
                     />
 
-                    {/* PLAY OVERLAY */}
+                    {/* PLAY BUTTON */}
                     <button
                       onClick={() => setPlayingId(item.id)}
                       className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition"
@@ -97,13 +98,16 @@ const Portfolio: React.FC = () => {
                     </button>
                   </>
                 ) : (
-                  /* VIDEO PLAYER */
-                  <iframe
-                    src={item.videoUrl}
-                    className="w-full h-full"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
-                  />
+                  <>
+                    {/* SCREENPAL EMBED — SAME AS SHOWREEL */}
+                    <iframe
+                      src={embedUrl}
+                      className="w-full h-full object-cover"
+                      allow="autoplay; fullscreen"
+                      allowFullScreen
+                      frameBorder="0"
+                    />
+                  </>
                 )}
               </div>
             );
