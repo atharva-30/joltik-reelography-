@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Clapperboard } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
 
 const Navbar: React.FC = () => {
@@ -23,7 +23,12 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <Clapperboard className="w-8 h-8 text-amber-500 group-hover:text-amber-400 transition-colors" />
+          <img
+  src="/logo.png"
+  alt="Joltik Reelography Logo"
+  className="w-8 h-8 object-contain"
+/>
+
           <div className="flex flex-col">
             <span className="text-xl font-bold uppercase tracking-widest text-white leading-none">
               Joltik
