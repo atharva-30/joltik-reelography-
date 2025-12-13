@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionTitle from './SectionTitle';
 import { PORTFOLIO_CATEGORIES } from '../constants';
-import { Eye, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Portfolio: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -66,30 +66,23 @@ const Portfolio: React.FC = () => {
               key={item.id}
               className="relative rounded-xl overflow-hidden aspect-[9/16] bg-black border border-neutral-800"
             >
-              {/* ScreenPal Embed (SAME AS SHOWREEL) */}
+              {/* EXACT SAME ScreenPal EMBED AS SHOWREEL */}
               <iframe
-                src={item.videoUrl}
-                className="w-full h-full object-cover"
+                src={`${item.videoUrl}&playsinline=1&background=1`}
+                className="w-full h-full"
                 allow="autoplay; fullscreen"
                 allowFullScreen
                 frameBorder="0"
               />
 
               {/* Bottom Overlay */}
-              <div className="absolute bottom-0 left-0 w-full p-5 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
+              <div className="absolute bottom-0 left-0 w-full p-5 bg-gradient-to-t from-black/90 via-black/50 to-transparent pointer-events-none">
                 <h4 className="text-white font-medium text-lg truncate">
                   {item.title}
                 </h4>
                 <p className="text-neutral-400 text-xs uppercase tracking-wider mt-1">
                   {activeCategory.title}
                 </p>
-
-                {item.views && (
-                  <div className="flex items-center gap-2 text-neutral-300 text-xs mt-2">
-                    <Eye size={14} />
-                    <span>{item.views} views</span>
-                  </div>
-                )}
               </div>
             </div>
           ))}
