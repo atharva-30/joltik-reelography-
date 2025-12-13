@@ -23,27 +23,28 @@ export const NAV_LINKS: NavLink[] = [
 export const SERVICES: Service[] = [
   {
     title: 'Event Reel Editing',
+    
 export const PORTFOLIO_CATEGORIES = [
   {
     title: "Music Reels",
     items: [
       {
         id: 1,
-        title: "Hip Hop Beat Drop",
+        title: "Hip Hop Reel",
         thumbnail: "/thumbnails/music1.jpg",
-        videoUrl: "https://screenpal.com/content/video/cTlIXfnYO3k",
+        videoId: "cTlIXfnYO3k",
       },
       {
         id: 2,
-        title: "Lyrical Edit",
+        title: "Beat Drop",
         thumbnail: "/thumbnails/music2.jpg",
-        videoUrl: "https://screenpal.com/content/video/REPLACE_2",
+        videoId: "REPLACE_2",
       },
       {
         id: 3,
         title: "DJ Promo",
         thumbnail: "/thumbnails/music3.jpg",
-        videoUrl: "https://screenpal.com/content/video/REPLACE_3",
+        videoId: "REPLACE_3",
       },
     ],
   },
@@ -55,23 +56,24 @@ export const PORTFOLIO_CATEGORIES = [
         id: 4,
         title: "Bride Entry",
         thumbnail: "/thumbnails/wedding1.jpg",
-        videoUrl: "https://screenpal.com/content/video/REPLACE_4",
+        videoId: "REPLACE_4",
       },
       {
         id: 5,
-        title: "Couple Highlights",
+        title: "Couple Edit",
         thumbnail: "/thumbnails/wedding2.jpg",
-        videoUrl: "https://screenpal.com/content/video/REPLACE_5",
+        videoId: "REPLACE_5",
       },
       {
         id: 6,
-        title: "Reception Edit",
+        title: "Reception",
         thumbnail: "/thumbnails/wedding3.jpg",
-        videoUrl: "https://screenpal.com/content/video/REPLACE_6",
+        videoId: "REPLACE_6",
       },
     ],
   },
 ];
+
     description: 'Capturing the energy and key moments of your events with fast-paced cuts.',
     deliverables: ['30-60 sec Reel', 'Color Grading', 'Sound Design'],
     priceRange: 'Starts at $150',
