@@ -66,21 +66,13 @@ const Hero: React.FC = () => {
             />
 
             {/* Overlay */}
-            <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black">
-                  <Play size={18} fill="currentColor" />
-                </div>
-                <div>
-                  <p className="text-white font-bold text-sm">
-                    Latest Showreel
-                  </p>
-                  <p className="text-neutral-400 text-xs">
-                    2024 Edition
-                  </p>
-                </div>
-              </div>
-            </div>
+<div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
+  <div>
+    <p className="text-white font-bold text-sm">Latest Showreel</p>
+    <p className="text-neutral-400 text-xs">2024 Edition</p>
+  </div>
+</div>
+
 
           </div>
         </div>
