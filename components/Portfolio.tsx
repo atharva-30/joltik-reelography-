@@ -66,16 +66,16 @@ const Portfolio: React.FC = () => {
               key={item.id}
               className="relative rounded-xl overflow-hidden aspect-[9/16] bg-black border border-neutral-800"
             >
-              {/* EXACT SAME ScreenPal EMBED AS SHOWREEL */}
+              {/* ScreenPal Embed — SAME AS SHOWREEL */}
               <iframe
-                src={`${item.videoUrl}&playsinline=1&background=1`}
+                src={item.videoUrl}
                 className="w-full h-full"
                 allow="autoplay; fullscreen"
                 allowFullScreen
                 frameBorder="0"
               />
 
-              {/* Bottom Overlay */}
+              {/* Overlay */}
               <div className="absolute bottom-0 left-0 w-full p-5 bg-gradient-to-t from-black/90 via-black/50 to-transparent pointer-events-none">
                 <h4 className="text-white font-medium text-lg truncate">
                   {item.title}
