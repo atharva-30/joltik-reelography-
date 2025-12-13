@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
   <div className="w-full h-full overflow-hidden rounded-lg group">
   <div className="w-full h-full overflow-hidden rounded-lg group">
   <video
-    src="https://go.screenpal.com/watch/cTlIXfnYO3k"
+    src="https://go.screenpal.com/player/cTlIXfnYO3k"
     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 hover:opacity-100"
     autoplay
     muted
