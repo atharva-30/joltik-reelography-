@@ -1,13 +1,18 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
-import { Film, Zap, Palette, Users } from 'lucide-react';
+import { Film, Zap, Palette } from 'lucide-react';
+import AppleLogo from '../public/apple.png'; // adjust path
 
 const About: React.FC = () => {
-  const skills = [
-    { icon: Film, title: "2+ Years Exp", desc: "Professional editing journey" },
-    { icon: Zap, title: "Fast-Paced", desc: "High retention editing style" },
-    { icon: Users, title: "Client Focus", desc: "Singers, Clubs, Creators" },
-    { icon: Palette, title: "Visuals", desc: "Color Grading & VFX" },
+  const AppleIcon = () => (
+  <img src={AppleLogo} alt="Apple" className="w-8 h-8 object-contain" />
+);
+
+const skills = [
+  { icon: Film, title: "2+ Years Exp", desc: "Professional editing journey" },
+  { icon: Zap, title: "Fast-Paced", desc: "High retention editing style" },
+  { icon: Users, title: "Client Focus", desc: "Singers, Clubs, Creators" },
+  { icon: AppleIcon, title: "Apple Certified", desc: "Pro tools expertise" },
   ];
 
   return (
