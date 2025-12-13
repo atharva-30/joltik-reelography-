@@ -1,18 +1,19 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
-import { Film, Zap, Palette } from 'lucide-react';
-import AppleLogo from '../public/apple.png'; // adjust path
+import { Film, Zap, Palette, Users } from 'lucide-react';
+import AppleLogo from '../public/apple.png'; // make sure path is correct
 
-const About: React.FC = () => {
-  const AppleIcon = () => (
-  <img src={AppleLogo} alt="Apple" className="w-8 h-8 object-contain" />
+// Wrap PNG in a component that accepts props
+const AppleIcon: React.FC<React.HTMLAttributes<HTMLImageElement>> = ({ className }) => (
+  <img src={AppleLogo} alt="Apple" className={className} />
 );
 
-const skills = [
-  { icon: Film, title: "2+ Years Exp", desc: "Professional editing journey" },
-  { icon: Zap, title: "Fast-Paced", desc: "High retention editing style" },
-  { icon: Users, title: "Client Focus", desc: "Singers, Clubs, Creators" },
-  { icon: AppleIcon, title: "Apple Certified", desc: "Pro tools expertise" },
+const About: React.FC = () => {
+  const skills = [
+    { icon: Film, title: "2+ Years Exp", desc: "Professional editing journey" },
+    { icon: Zap, title: "Fast-Paced", desc: "High retention editing style" },
+    { icon: Users, title: "Client Focus", desc: "Singers, Clubs, Creators" },
+    { icon: AppleIcon, title: "Apple Certified", desc: "Pro tools expertise" },
   ];
 
   return (
@@ -21,15 +22,19 @@ const skills = [
         <div className="flex flex-col md:flex-row gap-16 items-center">
           
           <div className="flex-1 order-2 md:order-1">
-             <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-amber-500/50 transition-colors group">
-                    <skill.icon className="w-8 h-8 text-amber-500 mb-3 group-hover:scale-110 transition-transform" />
-                    <h3 className="text-white font-bold text-lg mb-1">{skill.title}</h3>
-                    <p className="text-neutral-400 text-sm">{skill.desc}</p>
-                  </div>
-                ))}
-             </div>
+            <div className="grid grid-cols-2 gap-4">
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-amber-500/50 transition-colors group"
+                >
+                  {/* Pass className to both Lucide icons and PNG */}
+                  <skill.icon className="w-8 h-8 mb-3 group-hover:scale-110 transition-transform text-amber-500" />
+                  <h3 className="text-white font-bold text-lg mb-1">{skill.title}</h3>
+                  <p className="text-neutral-400 text-sm">{skill.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="flex-1 order-1 md:order-2">
@@ -49,9 +54,9 @@ const skills = [
             
             <div className="mt-8">
               <div className="flex items-center gap-4">
-                 <div className="h-px bg-neutral-700 flex-1"></div>
-                 <span className="text-white font-signature text-2xl">Atharva Raorane</span>
-                 <div className="h-px bg-neutral-700 flex-1"></div>
+                <div className="h-px bg-neutral-700 flex-1"></div>
+                <span className="text-white font-signature text-2xl">Atharva Raorane</span>
+                <div className="h-px bg-neutral-700 flex-1"></div>
               </div>
             </div>
           </div>
