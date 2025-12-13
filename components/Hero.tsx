@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         {/* Left Content */}
         <div className="flex-1 text-center lg:text-left z-10">
           <h2 className="text-amber-500 font-bold tracking-widest uppercase mb-4 text-sm md:text-base">
-            Professional Reel Editor
+            Reel Videographer & Editor
           </h2>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight">
             ATHARVA <br />
