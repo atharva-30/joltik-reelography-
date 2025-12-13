@@ -47,13 +47,16 @@ const Hero: React.FC = () => {
           <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
              {/* Placeholder for Atharva's photo */}
             <div className="w-full h-full overflow-hidden rounded-lg group">
-  <iframe 
-    src="https://www.instagram.com/reel/DPaw4TnDGUG/embed" 
+  <div className="w-full h-full overflow-hidden rounded-lg group">
+  <iframe
+    src="https://go.screenpal.com/watch/cTlIXfnYO3k"
     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 hover:opacity-100"
-    frameborder="0" 
+    frameborder="0"
     allowfullscreen
+    allow="autoplay; encrypted-media"
     loading="lazy"
   ></iframe>
+</div>
 </div>
 
             {/* Overlay Elements */}
