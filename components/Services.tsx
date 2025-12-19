@@ -8,8 +8,8 @@ const Services: React.FC = () => {
     <section id="services" className="py-24 bg-neutral-900">
       <div className="container mx-auto px-6">
         <SectionTitle 
-          title="My Services" 
-          subtitle="Tailored editing solutions for every need."
+          title="My Presentation" 
+          subtitle="What I shoot and present? The cards interpets below :"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
