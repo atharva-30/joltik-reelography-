@@ -118,16 +118,6 @@ export const SERVICES: Service[] = [
     ],
     icon: Building2
   },
-  {
-    title: 'Travel / Cinematic Reels',
-    description: 'Atmospheric reels that tell a visual story of places, journeys, and experiences.',
-    deliverables: [
-      'Cinematic pacing',
-      'Natural sound design',
-      'Story-driven sequence'
-    ],
-    icon: Plane
-  }
 ];
 
 
