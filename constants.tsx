@@ -69,48 +69,67 @@ export const PORTFOLIO_REELS = [
 
 export const SERVICES: Service[] = [
   {
-    title: 'Event Reel Editing',
-    description: 'Capturing the energy and key moments of your events with fast-paced cuts.',
-    deliverables: ['30-60 sec Reel', 'Color Grading', 'Sound Design'],
-    priceRange: 'Starts at $150',
+    title: 'Event Reels',
+    description: 'High-energy edits that capture crowd reactions, key moments, and the overall vibe of live events.',
+    deliverables: [
+      'Fast-paced storytelling',
+      'Beat-synced cuts',
+      'Highlight-driven flow'
+    ],
     icon: PartyPopper
   },
   {
-    title: 'Commercial / Outlet Promo',
-    description: 'High-conversion edits designed to showcase products and store ambiance.',
-    deliverables: ['Trend Research', 'Dynamic Transitions', 'CTA Overlay'],
-    priceRange: 'Starts at $200',
+    title: 'Commercial / Outlet Promos',
+    description: 'Short-form promotional reels designed to visually sell products, spaces, and brand identity.',
+    deliverables: [
+      'Product-focused framing',
+      'Smooth transitions',
+      'Attention-grabbing hooks'
+    ],
     icon: ShoppingBag
   },
   {
-    title: 'Wedding Highlights',
-    description: 'Cinematic storytelling that immortalizes your special day emotionally.',
-    deliverables: ['Cinematic Color Grade', 'Slow Motion', 'Music Sync'],
-    priceRange: 'Starts at $300',
+    title: 'Wedding Highlight Reels',
+    description: 'Emotion-driven cinematic reels that summarize the essence of the wedding day.',
+    deliverables: [
+      'Story-based sequencing',
+      'Soft cinematic color tones',
+      'Music-synced emotional moments'
+    ],
     icon: Video
   },
   {
-    title: 'Music Video Editing',
-    description: 'Professional cuts, effects, and flow for artists and bands.',
-    deliverables: ['VFX Basics', 'Beat Sync', '4K Export'],
-    priceRange: 'Starts at $400',
+    title: 'Music Video Reels',
+    description: 'Creative edits built around rhythm, mood, and artist personality.',
+    deliverables: [
+      'Beat-focused cuts',
+      'Visual flow consistency',
+      'Performance-driven pacing'
+    ],
     icon: Music
   },
   {
-    title: 'Building/Real Estate',
-    description: 'Smooth, stabilizing walkthroughs that sell properties faster.',
-    deliverables: ['Speed Ramping', 'Text Overlay', 'Wide Angle Corrections'],
-    priceRange: 'Starts at $180',
+    title: 'Real Estate / Building Reels',
+    description: 'Clean and smooth walkthrough-style reels showcasing architecture and spatial flow.',
+    deliverables: [
+      'Stabilized motion',
+      'Wide-frame emphasis',
+      'Informative text highlights'
+    ],
     icon: Building2
   },
   {
-    title: 'Travel / Cinematic',
-    description: 'Inspiring travelogues that bring destinations to life.',
-    deliverables: ['Soundscapes', 'LUTS', 'Story Arc'],
-    priceRange: 'Starts at $250',
+    title: 'Travel / Cinematic Reels',
+    description: 'Atmospheric reels that tell a visual story of places, journeys, and experiences.',
+    deliverables: [
+      'Cinematic pacing',
+      'Natural sound design',
+      'Story-driven sequence'
+    ],
     icon: Plane
   }
 ];
+
 
 export const TESTIMONIALS: Testimonial[] = [
   {
