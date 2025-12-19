@@ -79,7 +79,7 @@ export const SERVICES: Service[] = [
     icon: PartyPopper
   },
   {
-    title: 'Commercial / Outlet Promos',
+    title: 'Commercial Outlet Reels',
     description: 'Short-form promotional reels designed to visually sell products, spaces, and brand identity.',
     deliverables: [
       'Product-focused framing',
@@ -89,7 +89,7 @@ export const SERVICES: Service[] = [
     icon: ShoppingBag
   },
   {
-    title: 'Wedding Highlight Reels',
+    title: 'Wedding Reels',
     description: 'Emotion-driven cinematic reels that summarize the essence of the wedding day.',
     deliverables: [
       'Story-based sequencing',
@@ -109,7 +109,7 @@ export const SERVICES: Service[] = [
     icon: Music
   },
   {
-    title: 'Real Estate / Building Reels',
+    title: 'Real Estate Reels',
     description: 'Clean and smooth walkthrough-style reels showcasing architecture and spatial flow.',
     deliverables: [
       'Stabilized motion',
