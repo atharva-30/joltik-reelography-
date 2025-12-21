@@ -25,17 +25,17 @@ const About: React.FC = () => {
     {
       icon: Zap,
       title: "Fast-Paced",
-      desc: "High retention editing style",
+      desc: "Fast Delivery",
     },
     {
       icon: CapCutIcon,
-      title: "Client Focus",
-      desc: "Singers, Clubs, Creators",
+      title: "Capcut Pro",
+      desc: "Quicker and Quality Work",
     },
     {
       icon: AppleIcon,
-      title: "Apple Certified",
-      desc: "Pro tools expertise",
+      title: "iPhone Videography",
+      desc: "i16 Captures Quality",
     },
   ];
 
