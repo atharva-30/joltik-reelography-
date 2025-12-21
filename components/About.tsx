@@ -20,7 +20,7 @@ const About: React.FC = () => {
     {
       icon: Film,
       title: "2+ Years Exp",
-      desc: "Professional editing journey",
+      desc: "Professional Reelography Journey",
     },
     {
       icon: Zap,
