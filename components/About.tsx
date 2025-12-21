@@ -25,7 +25,7 @@ const About: React.FC = () => {
     {
       icon: Zap,
       title: "Fast-Paced",
-      desc: "Fast Delivery",
+      desc: "Fast Delivery and Ready to Post",
     },
     {
       icon: CapCutIcon,
