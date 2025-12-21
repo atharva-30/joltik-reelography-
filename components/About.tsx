@@ -30,7 +30,7 @@ const About: React.FC = () => {
     {
       icon: CapCutIcon,
       title: "Capcut Pro",
-      desc: "Quicker and Quality Work",
+      desc: "Exports Quicker and Quality Work",
     },
     {
       icon: AppleIcon,
