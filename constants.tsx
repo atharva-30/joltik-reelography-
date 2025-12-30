@@ -21,16 +21,16 @@ export const NAV_LINKS: NavLink[] = [
 export const PORTFOLIO_REELS = [
   {
     id: 1,
-    title: "Birthday Reels",
+    title: "Wedding Reels",
     videos: [
-      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
+      "https://go.screenpal.com/player/cTlvlFnrexQ?autoplay=0&muted=1&loop=1&controls=1",
       "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
       "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
     ],
   },
   {
     id: 2,
-    title: "Wedding Reels",
+    title: "Birthday Reels",
     videos: [
       "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
       "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
