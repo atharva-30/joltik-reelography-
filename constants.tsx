@@ -30,6 +30,15 @@ export const PORTFOLIO_REELS = [
   },
   {
     id: 2,
+    title: "Commercial Outlet Reels",
+    videos: [
+      "https://go.screenpal.com/player/cTlIb3nYOEd?autoplay=0&muted=1&loop=1&controls=1",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
+      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
+    ],
+  },
+  {
+    id: 3,
     title: "Birthday Reels",
     videos: [
       "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
@@ -38,17 +47,8 @@ export const PORTFOLIO_REELS = [
     ],
   },
   {
-    id: 3,
-    title: "Building Site Reels",
-    videos: [
-      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
-      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
-      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
-    ],
-  },
-  {
     id: 4,
-    title: "Commercial Outlet Reels",
+    title: "Building Site Reels",
     videos: [
       "https://go.screenpal.com/player/cTlIb3nYOEd?autoplay=0&muted=1&loop=1&controls=1",
       "https://go.screenpal.com/player/cTlIbqnYOEA?autoplay=0&muted=1&loop=1&controls=1",
