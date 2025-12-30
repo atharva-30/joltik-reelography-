@@ -25,7 +25,7 @@ export const PORTFOLIO_REELS = [
     videos: [
       "https://go.screenpal.com/player/cTlvlFnrexj?autoplay=0&muted=1&loop=1&controls=1",
       "https://go.screenpal.com/player/cTlvlFnrexQ?autoplay=0&muted=1&loop=1&controls=1",
-      "https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1",
+      "https://go.screenpal.com/player/cTlvlFnrexi?autoplay=0&muted=1&loop=1&controls=1",
     ],
   },
   {
