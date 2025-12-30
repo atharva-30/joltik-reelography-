@@ -38,35 +38,47 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
 
-        {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {activeSection.videos.map((url, idx) => (
-            <div
-              key={idx}
-              className="aspect-[9/16] rounded-xl overflow-hidden bg-black border border-neutral-800 relative"
-            >
-              {playingIndex === idx ? (
-                <iframe
-                  src={url}
-                  className="w-full h-full"
-                  allow="fullscreen"
-                  allowFullScreen
-                  frameBorder="0"
-                />
-              ) : (
-                <button
-                  onClick={() => setPlayingIndex(idx)}
-                  className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-lg font-bold"
-                >
-                  ▶ Tap to Play
-                </button>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
+        {/* Video Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {activeSection.videos.map((url, idx) => (
+            <div
+              key={idx}
+              className="className="
+  aspect-[9/16]
+  w-full
+  max-w-[240px] md:max-w-[260px]
+  max-h-[420px] md:max-h-[460px]
+  mx-auto
+  rounded-xl
+  overflow-hidden
+  bg-black
+  border border-neutral-800
+  relative
+"
+"
+            >
+              {playingIndex === idx ? (
+                <iframe
+                  src={url}
+                  className="w-full h-full"
+                  allow="fullscreen"
+                  allowFullScreen
+                  frameBorder="0"
+                />
+              ) : (
+                <button
+                  onClick={() => setPlayingIndex(idx)}
+                  className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-lg font-bold"
+                >
+                  ▶ Tap to Play
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 export default Portfolio;
