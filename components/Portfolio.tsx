@@ -17,7 +17,7 @@ const Portfolio: React.FC = () => {
         />
 
         {/* Section Tabs - Horizontal Carousel */}
-        <div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12">
+<div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12 pl-1 md:pl-0">
           {PORTFOLIO_REELS.map((section, index) => (
             <button
               key={section.id}
