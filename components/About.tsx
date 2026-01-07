@@ -2,11 +2,11 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import { Film, Zap } from 'lucide-react';
 
-// ✅ PNG imports (make sure these paths are correct)
+// PNG imports - ensure your build setup supports importing PNGs like this
 import AppleLogo from '../public/apple.png';
 import CapCutLogo from '../public/capcut.png';
 
-// ✅ PNG icon wrappers (accept className like Lucide icons)
+// PNG icon wrappers to allow usage like React components with className prop
 const AppleIcon: React.FC<{ className?: string }> = ({ className }) => (
   <img src={AppleLogo} alt="Apple" className={className} />
 );
@@ -47,7 +47,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16 items-center">
 
-          {/* LEFT GRID */}
+          {/* LEFT GRID: Skills / Icons */}
           <div className="flex-1 order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               {skills.map((skill, index) => (
@@ -71,7 +71,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
+          {/* RIGHT CONTENT: About Text */}
           <div className="flex-1 order-1 md:order-2">
             <h4 className="text-amber-500 font-bold uppercase tracking-widest mb-2 text-sm">
               About Me
