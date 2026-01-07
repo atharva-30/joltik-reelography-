@@ -19,7 +19,7 @@ const About: React.FC = () => {
   const skills = [
     {
       icon: Film,
-      title: "3+ Years Exp",
+      title: "2+ Years Exp",
       desc: "Professional Reelography Journey",
     },
     {
