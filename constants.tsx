@@ -1,13 +1,12 @@
-import { 
-  Video, 
-  PartyPopper, 
-  Building2, 
-  ShoppingBag, 
-  Music, 
-  Plane,
-  Clapperboard
+import {
+  Video,
+  PartyPopper,
+  Building2,
+  ShoppingBag,
+  Music,
 } from 'lucide-react';
-import { NavLink, PortfolioCategory, Service, Testimonial } from './types';
+
+import { NavLink, Service, Testimonial } from './types';
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '#home' },
@@ -66,7 +65,6 @@ export const PORTFOLIO_REELS = [
   },
 ];
 
-
 export const SERVICES: Service[] = [
   {
     title: 'Event Reels',
@@ -119,7 +117,6 @@ export const SERVICES: Service[] = [
     icon: Building2
   },
 ];
-
 
 export const TESTIMONIALS: Testimonial[] = [
   {
