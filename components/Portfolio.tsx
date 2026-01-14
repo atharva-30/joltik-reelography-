@@ -34,13 +34,13 @@ const Portfolio: React.FC = () => {
 
         {/* Video Grid – SAME AS LATEST SHOWREEL */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {activeSection.videos.map((video, idx) => (
+          {activeSection.videos.map((url, idx) => (
             <div
               key={idx}
               className="aspect-[9/16] w-full max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-black mx-auto"
             >
-              <video
-                src={video}
+              <iframe
+                src={url}
                 autoPlay
                 muted
                 loop
