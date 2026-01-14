@@ -81,7 +81,7 @@ const About: React.FC = () => {
                 I’m Atharva Raorane, a freelance reel videographer and editor behind
                 Joltik Reelography. Since 2023, I’ve been creating cinematic,
                 fast-paced reels for weddings, festivals, events, and commercial
-                outlets focused on capturing energy, emotion, and attention-grabbing
+                outlets focusing on capturing energy, emotion, and attention-grabbing
                 visuals for digital platforms.
               </p>
               <p>
@@ -90,15 +90,7 @@ const About: React.FC = () => {
                 translating a client’s vision into impactful short-form content that
                 feels polished, engaging, and platform-ready.
               </p>
-              <p>
-                Through hands-on project experience and real client feedback, I’ve
-                developed the ability to adapt quickly, understand requirements
-                clearly, and deliver high-quality reels within tight timelines. With
-                Joltik Reelography, I aim to collaborate with growing brands and
-                high-end commercial projects that value strong visual presence and
-                professional execution.
-              </p>
-            </div>
+              </div>
 
             {/* Signature */}
             <div className="mt-8">
