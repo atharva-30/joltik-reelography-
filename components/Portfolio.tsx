@@ -12,7 +12,7 @@ const Portfolio: React.FC = () => {
     <section id="work" className="py-24 bg-neutral-950">
       <div className="container mx-auto px-6">
         <SectionTitle
-          title="Selected Works"
+          title="Selected Workk"
           subtitle="Tap to play reels — smooth scrolling enabled"
         />
 
