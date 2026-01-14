@@ -14,22 +14,27 @@ const Portfolio: React.FC = () => {
           subtitle="Latest works & showreels"
         />
 
-        {/* Tabs */}
-        <div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12">
-          {PORTFOLIO_REELS.map((section, index) => (
-            <button
-              key={section.id}
-              onClick={() => setActiveIndex(index)}
-              className={`flex-shrink-0 px-6 py-3 font-bold rounded-full text-white transition-transform duration-300 ${
-                activeIndex === index
-                  ? "scale-105 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600"
-                  : "bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600/70 hover:scale-105"
-              }`}
-            >
-              {section.title}
-            </button>
-          ))}
-        </div>
+{/* Tabs */}
+<div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12">
+  {PORTFOLIO_REELS.map((section, index) => {
+    const isActive = activeIndex === index;
+
+    return (
+      <button
+        key={section.id}
+        onClick={() => setActiveIndex(index)}
+        className={`flex-shrink-0 px-6 py-3 font-bold rounded-full text-white
+          transition-all duration-300
+          ${isActive
+            ? "scale-105 opacity-100 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600"
+            : "opacity-40 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600/70 hover:opacity-80"
+          }`}
+      >
+        {section.title}
+      </button>
+    );
+  })}
+</div>
 
         {/* Video Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
