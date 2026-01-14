@@ -14,18 +14,17 @@ const Portfolio: React.FC = () => {
           subtitle="Latest works & showreels"
         />
 
-        {/* Section Tabs */}
-        <div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12 pl-1 md:pl-0">
+        {/* Tabs */}
+        <div className="flex space-x-4 overflow-x-auto py-2 scrollbar-hide mb-12">
           {PORTFOLIO_REELS.map((section, index) => (
             <button
               key={section.id}
               onClick={() => setActiveIndex(index)}
-              className={`flex-shrink-0 px-6 py-3 font-bold rounded-full
-                text-white transition-transform duration-300 ${
-                  activeIndex === index
-                    ? "scale-105 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600"
-                    : "bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600/70 hover:scale-105"
-                }`}
+              className={`flex-shrink-0 px-6 py-3 font-bold rounded-full text-white transition-transform duration-300 ${
+                activeIndex === index
+                  ? "scale-105 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600"
+                  : "bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600/70 hover:scale-105"
+              }`}
             >
               {section.title}
             </button>
@@ -37,21 +36,19 @@ const Portfolio: React.FC = () => {
           {activeSection.videos.map((url, idx) => (
             <div
               key={idx}
-              className="relative aspect-[9/16] w-full max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-black mx-auto"
+              className="relative aspect-[9/16] w-full max-w-[260px] mx-auto rounded-xl overflow-hidden bg-black shadow-lg"
             >
-              {/* IFRAME */}
-              <iframe
-                src={url}
-                className="w-full h-full object-cover"
-                allow="autoplay; encrypted-media"
-                loading="lazy"
-              />
-
-              {/* SCROLL-PASS LAYER */}
-              <div
-                className="absolute inset-0"
-                onTouchMove={(e) => e.stopPropagation()}
-              />
+              {/* Scroll-friendly wrapper */}
+              <div className="absolute inset-0 pointer-events-none">
+                <iframe
+                  src={url}
+                  title={`ScreenPal Reel ${idx + 1}`}
+                  loading="lazy"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full pointer-events-auto"
+                />
+              </div>
             </div>
           ))}
         </div>
