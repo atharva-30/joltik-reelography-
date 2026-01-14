@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
-import { WHATSAPP_PHONE_NUMBER } from "../constants";
+import { +917710988631 } from "../constants";
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({
