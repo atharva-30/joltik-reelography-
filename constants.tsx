@@ -1,88 +1,46 @@
-import React, { useState } from "react";
-import SectionTitle from "./SectionTitle";
-import { +917710988631 } from "../constants";
+import {
+  Video,
+  PartyPopper,
+  Building2,
+  ShoppingBag,
+  Music,
+} from 'lucide-react';
 
-const Contact: React.FC = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+import { NavLink, Service, Testimonial } from './types';
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+/* ---------------- NAVIGATION ---------------- */
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+export const NAV_LINKS: NavLink[] = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Work', href: '#work' },
+  { label: 'Services', href: '#services' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Contact', href: '#contact' },
+];
 
-    const text = `
-📩 *New Website Enquiry*
+/* ---------------- PORTFOLIO REELS ---------------- */
 
-👤 Name: ${form.name}
-📧 Email: ${form.email}
-💬 Message:
-${form.message}
-    `;
-
-    const url = `https://wa.me/${+917710988631}?text=${encodeURIComponent(
-      text
-    )}`;
-
-    window.open(url, "_blank");
-  };
-
-  return (
-    <section id="contact" className="py-24 bg-neutral-950">
-      <div className="container mx-auto px-6 max-w-3xl">
-        <SectionTitle
-          title="Get In Touch"
-          subtitle="Let’s create something impactful"
-        />
-
-        <form
-          onSubmit={handleSubmit}
-          className="mt-12 bg-neutral-900 p-8 rounded-xl border border-neutral-800 space-y-6"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            onChange={handleChange}
-            className="w-full p-4 rounded-md bg-neutral-950 border border-neutral-800 text-white focus:outline-none focus:border-amber-500"
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            onChange={handleChange}
-            className="w-full p-4 rounded-md bg-neutral-950 border border-neutral-800 text-white focus:outline-none focus:border-amber-500"
-          />
-
-          <textarea
-            name="message"
-            placeholder="Tell me about your project"
-            rows={5}
-            required
-            onChange={handleChange}
-            className="w-full p-4 rounded-md bg-neutral-950 border border-neutral-800 text-white focus:outline-none focus:border-amber-500"
-          />
-
-          <button
-            type="submit"
-            className="w-full py-4 font-bold text-white rounded-md bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:scale-[1.02] transition-transform"
-          >
-            Send on WhatsApp
-          </button>
-        </form>
-      </div>
-    </section>
-  );
-};
-
-export default Contact;
+export const PORTFOLIO_REELS = [
+  {
+    id: 1,
+    title: 'Weddingg Reels',
+    videos: [
+      'https://go.screenpal.com/player/cTlvlFnrexj?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlvlFnrexQ?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlvlFnrexi?autoplay=0&muted=1&loop=1&controls=1',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Commercial Outlet Reels',
+    videos: [
+      'https://go.screenpal.com/player/cTlIb3nYOEd?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlIbqnYOEA?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Birthday Reels',
+    vid
