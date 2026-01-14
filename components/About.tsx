@@ -1,12 +1,12 @@
-import React from 'react';
-import SectionTitle from './SectionTitle';
-import { Film, Zap } from 'lucide-react';
+import React from "react";
+import SectionTitle from "./SectionTitle";
+import { Film, Zap } from "lucide-react";
 
-// ✅ PNG imports (make sure these paths are correct)
-import AppleLogo from '../public/apple.png';
-import CapCutLogo from '../public/capcut.png';
+// PNG imports
+import AppleLogo from "../public/apple.png";
+import CapCutLogo from "../public/capcut.png";
 
-// ✅ PNG icon wrappers (accept className like Lucide icons)
+// PNG icon wrappers (accept className like Lucide icons)
 const AppleIcon: React.FC<{ className?: string }> = ({ className }) => (
   <img src={AppleLogo} alt="Apple" className={className} />
 );
@@ -29,7 +29,7 @@ const About: React.FC = () => {
     },
     {
       icon: CapCutIcon,
-      title: "Capcut Pro",
+      title: "CapCut Pro",
       desc: "Exports Quicker and Quality Work",
     },
     {
@@ -40,50 +40,52 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-neutral-900 border-t border-neutral-800">
+    <section
+      id="about"
+      className="py-20 bg-neutral-900 border-t border-neutral-800"
+    >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16 items-center">
           
+          {/* Skills Grid */}
           <div className="flex-1 order-2 md:order-1">
-             <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-amber-500/50 transition-colors group">
-                    <skill.icon className="w-8 h-8 text-amber-500 mb-3 group-hover:scale-110 transition-transform" />
-                    <h3 className="text-white font-bold text-lg mb-1">{skill.title}</h3>
-                    <p className="text-neutral-400 text-sm">{skill.desc}</p>
-                  </div>
-                ))}
-             </div>
+            <div className="grid grid-cols-2 gap-4">
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-amber-500/50 transition-colors group"
+                >
+                  <skill.icon
+                    className="w-8 h-8 text-white mb-3 transition-all duration-300 group-hover:scale-110"
+                  />
+                  <h3 className="text-white font-bold text-lg mb-1">
+                    {skill.title}
+                  </h3>
+                  <p className="text-neutral-400 text-sm">{skill.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
+          {/* About Text */}
           <div className="flex-1 order-1 md:order-2">
-            <h4 className="text-amber-500 font-bold uppercase tracking-widest mb-2 text-sm">About Me</h4>
-            <h2 className="text-4xl font-bold text-white mb-6">Crafting Visual Stories That Resonate</h2>
+            <h4 className="text-amber-500 font-bold uppercase tracking-widest mb-2 text-sm">
+              About Me
+            </h4>
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Crafting Visual Stories That Resonate
+            </h2>
+
             <div className="space-y-4 text-neutral-400 leading-relaxed">
               <p>
-                I’m Atharva Raorane, a freelance reel videographer and editor behind Joltik Reelography. Since 2023, I’ve been creating cinematic, fast-paced reels for weddings, festivals, events, and commercial outlets focused on capturing energy, emotion, and attention-grabbing visuals for digital platforms.
+                I’m Atharva Raorane, a freelance reel videographer and editor behind
+                Joltik Reelography. Since 2023, I’ve been creating cinematic,
+                fast-paced reels for weddings, festivals, events, and commercial
+                outlets focused on capturing energy, emotion, and attention-grabbing
+                visuals for digital platforms.
               </p>
               <p>
-                My editing approach is rooted in strong visual storytelling, clean framing, precise beat sync, and smooth transitions. I specialize in translating a client’s vision into impactful short-form content that feels polished, engaging, and platform-ready. 
-              </p>
-              <p>
-                Through hands-on project experience and real client feedback, I’ve developed the ability to adapt quickly, understand requirements clearly, and deliver high-quality reels within tight timelines. With Joltik Reelography, I aim to collaborate with growing brands and high-end commercial projects that value strong visual presence and professional execution.
-              </p>
-            </div>
-            
-            <div className="mt-8">
-              <div className="flex items-center gap-4">
-                 <div className="h-px bg-neutral-700 flex-1"></div>
-                 <span className="text-white font-signature text-2xl">Atharva Raorane</span>
-                 <div className="h-px bg-neutral-700 flex-1"></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default About;
+                My editing approach is rooted in strong visual storytelling, clean
+                framing, precise beat sync, and smooth transitions. I specialize in
+                translating a client’s vision into impactful short-form content that
+                feels polished, engaging, and p
