@@ -53,8 +53,8 @@ export const PORTFOLIO_REELS = [
     id: 4,
     title: 'Building Site Reels',
     videos: [
-      'https://go.screenpal.com/player/cTlIb3nYOEd?autoplay=0&muted=1&loop=1&controls=1',
-      'https://go.screenpal.com/player/cTlIbqnYOEA?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cOV2qPnrEF6?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cOV2YVnrEFp?autoplay=0&muted=1&loop=1&controls=1',
       'https://go.screenpal.com/player/cTlIbYnYOEp?autoplay=0&muted=1&loop=1&controls=1',
     ],
   },
