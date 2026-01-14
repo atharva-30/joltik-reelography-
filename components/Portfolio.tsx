@@ -37,13 +37,20 @@ const Portfolio: React.FC = () => {
           {activeSection.videos.map((url, idx) => (
             <div
               key={idx}
-              className="aspect-[9/16] w-full max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-black mx-auto"
+              className="relative aspect-[9/16] w-full max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-black mx-auto"
             >
+              {/* IFRAME */}
               <iframe
                 src={url}
-                className="w-full h-full object-cover pointer-events-none"
+                className="w-full h-full object-cover"
                 allow="autoplay; encrypted-media"
                 loading="lazy"
+              />
+
+              {/* SCROLL-PASS LAYER */}
+              <div
+                className="absolute inset-0"
+                onTouchMove={(e) => e.stopPropagation()}
               />
             </div>
           ))}
