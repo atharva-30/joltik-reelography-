@@ -32,13 +32,13 @@ const About: React.FC = () => {
             <h2 className="text-4xl font-bold text-white mb-6">Crafting Visual Stories That Resonate</h2>
             <div className="space-y-4 text-neutral-400 leading-relaxed">
               <p>
-                My journey as a video editor began with a passion for rhythm and visual storytelling. Over the past 2+ years, I've honed my skills specifically for the vertical video format, understanding exactly what stops the scroll.
+                I’m Atharva Raorane, a freelance reel videographer and editor behind Joltik Reelography. Since 2023, I’ve been creating cinematic, fast-paced reels for weddings, festivals, events, and commercial outlets focused on capturing energy, emotion, and attention-grabbing visuals for digital platforms.
               </p>
               <p>
-                I don't just cut footage; I engineer moments. Whether it's the beat drop in a music video teaser or the emotional vows of a wedding highlight, I ensure every frame serves a purpose. 
+                My editing approach is rooted in strong visual storytelling, clean framing, precise beat sync, and smooth transitions. I specialize in translating a client’s vision into impactful short-form content that feels polished, engaging, and platform-ready. 
               </p>
               <p>
-                My toolkit includes advanced color grading to set the mood, seamless transitions to maintain flow, and VFX basics to add that extra production value. I've worked with diverse clients ranging from commercial outlets to private event organizers.
+                Through hands-on project experience and real client feedback, I’ve developed the ability to adapt quickly, understand requirements clearly, and deliver high-quality reels within tight timelines. With Joltik Reelography, I aim to collaborate with growing brands and high-end commercial projects that value strong visual presence and professional execution.
               </p>
             </div>
             
