@@ -62,9 +62,9 @@ export const PORTFOLIO_REELS = [
     id: 5,
     title: 'Music Videos',
     videos: [
-      'https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1',
-      'https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1',
-      'https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlIbbnYOEy?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlIb6nYOE2?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cTlIbrnYOEG?autoplay=0&muted=1&loop=1&controls=1',
     ],
   },
 ];
