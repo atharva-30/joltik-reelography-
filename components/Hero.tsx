@@ -27,10 +27,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-neutral-400 text-lg md:text-xl leading-relaxed max-w-2xl mb-8 mx-auto lg:mx-0">
-            I’m a professional reel video editor delivering cinematic, engaging,
-            and trend-driven reels for individuals, creators, and brands.
-            Creating edits that connect emotionally and perform strongly on
-            social platforms.
+            I am a Professional Reel Video Grapher Editor behind Joltik Reelography, specializing in cinematic, fast-paced reels for events, weddings, festivals, and commercial spaces. My reels are designed to capture energy, emotion, and rhythm delivering impactful visuals that perform across digital platforms.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
