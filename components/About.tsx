@@ -88,4 +88,34 @@ const About: React.FC = () => {
                 My editing approach is rooted in strong visual storytelling, clean
                 framing, precise beat sync, and smooth transitions. I specialize in
                 translating a client’s vision into impactful short-form content that
-                feels polished, engaging, and p
+                feels polished, engaging, and platform-ready.
+              </p>
+              <p>
+                Through hands-on project experience and real client feedback, I’ve
+                developed the ability to adapt quickly, understand requirements
+                clearly, and deliver high-quality reels within tight timelines. With
+                Joltik Reelography, I aim to collaborate with growing brands and
+                high-end commercial projects that value strong visual presence and
+                professional execution.
+              </p>
+            </div>
+
+            {/* Signature */}
+            <div className="mt-8">
+              <div className="flex items-center gap-4">
+                <div className="h-px bg-neutral-700 flex-1" />
+                <span className="text-white font-signature text-2xl">
+                  Atharva Raorane
+                </span>
+                <div className="h-px bg-neutral-700 flex-1" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
