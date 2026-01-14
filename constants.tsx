@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
 ${form.message}
     `;
 
-    const url = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(
+    const url = `https://wa.me/${7710988631}?text=${encodeURIComponent(
       text
     )}`;
 
