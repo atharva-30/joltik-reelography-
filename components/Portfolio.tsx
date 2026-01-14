@@ -42,16 +42,18 @@ const Portfolio: React.FC = () => {
           {activeSection.videos.map((video, idx) => (
             <div
               key={idx}
-              className="aspect-[9/16] w-full max-w-[240px] md:max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-neutral-900 mx-auto"
               onClick={() =>
                 setPlayingIndex(playingIndex === idx ? null : idx)
               }
+              className="aspect-[9/16] w-full max-w-[240px] md:max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-neutral-900 mx-auto cursor-pointer"
             >
               {playingIndex === idx ? (
                 <video
                   src={video}
                   autoPlay
                   loop
+                  muted
+                  playsInline
                   controls
                   className="w-full h-full object-cover"
                 />
@@ -59,7 +61,8 @@ const Portfolio: React.FC = () => {
                 <video
                   src={video}
                   muted
-                  className="w-full h-full object-cover"
+                  playsInline
+                  className="w-full h-full object-cover pointer-events-none"
                 />
               )}
             </div>
