@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SectionTitle from './SectionTitle';
-import { Instagram, Youtube, MessageCircle, Send, UploadCloud } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle, Send, Link } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const SERVICE_ID = 'service_ih08k9n';
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
           {/* Form */}
           <div className="flex-[1.5] bg-neutral-950 p-8 rounded-2xl border border-neutral-800">
             <form onSubmit={handleSubmit} className="space-y-6">
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input
                   type="text"
@@ -77,37 +77,3 @@ const Contact: React.FC = () => {
                   placeholder="Email Address"
                   className="w-full bg-neutral-900 border border-neutral-800 rounded-lg p-3 text-white"
                 />
-              </div>
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                className="w-full bg-neutral-900 border border-neutral-800 rounded-lg p-3 text-white"
-              />
-
-              <textarea
-                name="message"
-                required
-                rows={4}
-                placeholder="Tell me about your project..."
-                className="w-full bg-neutral-900 border border-neutral-800 rounded-lg p-3 text-white"
-              />
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-amber-600 hover:bg-amber-500 text-black font-bold py-4 rounded-lg flex items-center justify-center gap-2"
-              >
-                {isSubmitting ? 'Sending...' : <>Send Message <Send size={18} /></>}
-              </button>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Contact;
