@@ -15,19 +15,14 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
 
     emailjs
-      .sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        e.currentTarget,
-        PUBLIC_KEY
-      )
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_KEY)
       .then(() => {
-        alert("Message sent successfully!");
+        alert('Message sent successfully!');
         e.currentTarget.reset();
         setIsSubmitting(false);
       })
       .catch(() => {
-        alert("Failed to send message.");
+        alert('Failed to send message. Please try again.');
         setIsSubmitting(false);
       });
   };
@@ -42,22 +37,46 @@ const Contact: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
 
+          {/* CONNECT WITH ME */}
           <div className="flex-1 space-y-8">
             <h3 className="text-2xl font-bold text-white">Connect with Me</h3>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-neutral-300">
-                <Instagram className="text-pink-500" /> @joltikreelography
-              </div>
-              <div className="flex items-center gap-3 text-neutral-300">
-                <Youtube className="text-red-500" /> Atharva Raorane Films
-              </div>
-              <div className="flex items-center gap-3 text-neutral-300">
-                <MessageCircle className="text-green-500" /> +91 7710988631
-              </div>
+
+              <a
+                href="https://www.instagram.com/joltikreelography"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-neutral-300 hover:text-amber-500 transition"
+              >
+                <Instagram className="text-pink-500" />
+                @joltikreelography
+              </a>
+
+              <a
+                href="https://www.youtube.com/@AtharvaRaoraneFilms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-neutral-300 hover:text-amber-500 transition"
+              >
+                <Youtube className="text-red-500" />
+                Atharva Raorane Films
+              </a>
+
+              <a
+                href="https://wa.me/917710988631"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-neutral-300 hover:text-amber-500 transition"
+              >
+                <MessageCircle className="text-green-500" />
+                +91 77109 88631
+              </a>
+
             </div>
           </div>
 
+          {/* CONTACT FORM */}
           <div className="flex-[1.5] bg-neutral-950 p-8 rounded-xl border border-neutral-800">
             <form onSubmit={handleSubmit} className="space-y-6">
 
@@ -102,9 +121,9 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-amber-600 py-4 rounded font-bold"
+                className="w-full bg-amber-600 hover:bg-amber-500 py-4 rounded font-bold flex items-center justify-center gap-2"
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Sending...' : <>Send Message <Send size={16} /></>}
               </button>
 
             </form>
