@@ -1,34 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { PORTFOLIO_REELS } from "../constants";
 
 const Portfolio: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
-
-  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const activeSection = PORTFOLIO_REELS[activeIndex];
-
-  const handlePlay = (idx: number) => {
-    // Pause previously playing video
-    if (playingIndex !== null && videoRefs.current[playingIndex]) {
-      videoRefs.current[playingIndex]?.pause();
-    }
-
-    setPlayingIndex(idx);
-
-    // Play current video (USER GESTURE SAFE)
-    setTimeout(() => {
-      videoRefs.current[idx]?.play();
-    }, 0);
-  };
 
   return (
     <section id="work" className="py-24 bg-neutral-950">
       <div className="container mx-auto px-6">
         <SectionTitle
           title="Selected Work"
-          subtitle="Tap to play reels — smooth scrolling enabled"
+          subtitle="Latest works & showreels"
         />
 
         {/* Section Tabs */}
@@ -36,10 +19,7 @@ const Portfolio: React.FC = () => {
           {PORTFOLIO_REELS.map((section, index) => (
             <button
               key={section.id}
-              onClick={() => {
-                setActiveIndex(index);
-                setPlayingIndex(null);
-              }}
+              onClick={() => setActiveIndex(index)}
               className={`flex-shrink-0 px-6 py-3 font-bold rounded-full
                 text-white transition-transform duration-300 ${
                   activeIndex === index
@@ -52,33 +32,22 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
 
-        {/* Video Grid */}
+        {/* Video Grid – SAME AS LATEST SHOWREEL */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {activeSection.videos.map((video, idx) => (
             <div
               key={idx}
-              className="relative aspect-[9/16] w-full max-w-[240px] md:max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-neutral-900 mx-auto"
+              className="aspect-[9/16] w-full max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-black mx-auto"
             >
               <video
-                ref={(el) => (videoRefs.current[idx] = el)}
                 src={video}
+                autoPlay
                 muted
+                loop
                 playsInline
-                controls={playingIndex === idx}
+                controls
                 className="w-full h-full object-cover"
               />
-
-              {/* TAP TO PLAY OVERLAY */}
-              {playingIndex !== idx && (
-                <button
-                  onClick={() => handlePlay(idx)}
-                  className="absolute inset-0 flex items-center justify-center
-                             bg-black/50 text-white font-bold text-sm
-                             hover:bg-black/60 transition"
-                >
-                  ▶ Tap to Play
-                </button>
-              )}
             </div>
           ))}
         </div>
