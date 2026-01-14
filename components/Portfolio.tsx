@@ -32,7 +32,7 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
 
-        {/* Video Grid – SAME AS LATEST SHOWREEL */}
+        {/* Video Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {activeSection.videos.map((url, idx) => (
             <div
@@ -41,12 +41,9 @@ const Portfolio: React.FC = () => {
             >
               <iframe
                 src={url}
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
+                allow="autoplay; encrypted-media"
+                loading="lazy"
               />
             </div>
           ))}
