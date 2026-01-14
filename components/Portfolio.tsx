@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { PORTFOLIO_REELS } from "../constants";
 
@@ -6,7 +6,22 @@ const Portfolio: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const activeSection = PORTFOLIO_REELS[activeIndex];
+
+  const handlePlay = (idx: number) => {
+    // Pause previously playing video
+    if (playingIndex !== null && videoRefs.current[playingIndex]) {
+      videoRefs.current[playingIndex]?.pause();
+    }
+
+    setPlayingIndex(idx);
+
+    // Play current video (USER GESTURE SAFE)
+    setTimeout(() => {
+      videoRefs.current[idx]?.play();
+    }, 0);
+  };
 
   return (
     <section id="work" className="py-24 bg-neutral-950">
@@ -42,28 +57,27 @@ const Portfolio: React.FC = () => {
           {activeSection.videos.map((video, idx) => (
             <div
               key={idx}
-              onClick={() =>
-                setPlayingIndex(playingIndex === idx ? null : idx)
-              }
-              className="aspect-[9/16] w-full max-w-[240px] md:max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-neutral-900 mx-auto cursor-pointer"
+              className="relative aspect-[9/16] w-full max-w-[240px] md:max-w-[260px] rounded-xl overflow-hidden shadow-lg bg-neutral-900 mx-auto"
             >
-              {playingIndex === idx ? (
-                <video
-                  src={video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  controls
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <video
-                  src={video}
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover pointer-events-none"
-                />
+              <video
+                ref={(el) => (videoRefs.current[idx] = el)}
+                src={video}
+                muted
+                playsInline
+                controls={playingIndex === idx}
+                className="w-full h-full object-cover"
+              />
+
+              {/* TAP TO PLAY OVERLAY */}
+              {playingIndex !== idx && (
+                <button
+                  onClick={() => handlePlay(idx)}
+                  className="absolute inset-0 flex items-center justify-center
+                             bg-black/50 text-white font-bold text-sm
+                             hover:bg-black/60 transition"
+                >
+                  ▶ Tap to Play
+                </button>
               )}
             </div>
           ))}
