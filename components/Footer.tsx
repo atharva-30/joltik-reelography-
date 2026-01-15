@@ -16,15 +16,15 @@ const Footer: React.FC = () => {
         </p>
 
         <div className="flex gap-6">
-            <a href="#" className="text-neutral-600 hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="text-neutral-600 hover:text-white transition-colors">YouTube</a>
-            <a href="#" className="text-neutral-600 hover:text-white transition-colors">Whatsapp</a>
+            <a href="#home" className="text-neutral-600 hover:text-white transition-colors">Home</a>
+            <a href="#work" className="text-neutral-600 hover:text-white transition-colors">Work</a>
+            <a href="#about" className="text-neutral-600 hover:text-white transition-colors">About</a>
         </div>
 
         <div className="w-full h-px bg-neutral-900 max-w-xs my-2"></div>
         
         <p className="text-neutral-600 text-xs">
-            Made by Google AI Studio & ChatGPT
+            Made by Atharva Raorane 
         </p>
 
       </div>
