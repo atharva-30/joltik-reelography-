@@ -6,7 +6,7 @@ import { Film, Zap } from "lucide-react";
 import AppleLogo from "../public/apple.png";
 import CapCutLogo from "../public/capcut.png";
 
-// PNG icon wrappers (accept className like Lucide icons)
+// PNG icon wrappers
 const AppleIcon: React.FC<{ className?: string }> = ({ className }) => (
   <img src={AppleLogo} alt="Apple" className={className} />
 );
@@ -42,24 +42,41 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="py-20 bg-neutral-900 border-t border-neutral-800"
+      className="relative py-20 border-t border-neutral-800 overflow-hidden"
     >
-      <div className="container mx-auto px-6">
+      {/* BACKGROUND VIDEO */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        className="absolute inset-0 w-full h-full object-cover opacity-15 hidden md:block"
+      >
+        <source src="/bg-loop.mp4" type="video/mp4" />
+      </video>
+
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-neutral-950/85" />
+
+      {/* AMBIENCE GLOW */}
+      <div className="absolute top-0 left-0 w-1/2 h-full bg-amber-500/5 blur-[160px] pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row gap-16 items-center">
 
-          {/* Skills Grid */}
+          {/* SKILLS GRID */}
           <div className="flex-1 order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-amber-500/50 transition-colors group"
+                  className="bg-neutral-950/80 backdrop-blur-md p-6 rounded-xl border border-neutral-800 hover:border-amber-500/50 transition-colors group"
                 >
                   <skill.icon
-                    className="w-8 h-8 text-white mb-3 transition-all duration-300 group-hover:scale-110"
+                    className="w-8 h-8 text-white mb-3 transition-transform duration-300 group-hover:scale-110"
                   />
 
-                  {/* TITLE – AMBER */}
                   <h3 className="text-amber-500 font-bold text-lg mb-1 group-hover:text-amber-400 transition-colors">
                     {skill.title}
                   </h3>
@@ -70,7 +87,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* About Text */}
+          {/* ABOUT TEXT */}
           <div className="flex-1 order-1 md:order-2">
             <h4 className="text-amber-500 font-bold uppercase tracking-widest mb-2 text-sm">
               About Me
@@ -84,8 +101,8 @@ const About: React.FC = () => {
                 I’m Atharva Raorane, a freelance reel videographer and editor behind
                 Joltik Reelography. Since 2023, I’ve been creating cinematic,
                 fast-paced reels for weddings, festivals, events, and commercial
-                outlets focusing on capturing energy, emotion, and attention-grabbing
-                visuals for digital platforms.
+                outlets—focusing on capturing energy, emotion, and
+                attention-grabbing visuals.
               </p>
               <p>
                 My editing approach is rooted in strong visual storytelling, clean
@@ -95,7 +112,7 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Signature */}
+            {/* SIGNATURE */}
             <div className="mt-8">
               <div className="flex items-center gap-4">
                 <div className="h-px bg-neutral-700 flex-1" />
