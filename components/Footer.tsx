@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <img
             src="/logo.png"
             alt="Joltik Reelography Logo"
-            className="w-7 h-7 object-contain"
+            className="w-10 h-10 object-contain"
           />
           <span className="text-white font-bold text-xl uppercase tracking-widest">
             Joltik Reelography
