@@ -117,7 +117,7 @@ const About: React.FC = () => {
               <div className="flex items-center gap-4">
                 <div className="h-px bg-neutral-700 flex-1" />
                 <span className="text-amber-500 font-signature text-2xl">
-                  Atharva Raorane
+                  ATHARVA RAORANE
                 </span>
                 <div className="h-px bg-neutral-700 flex-1" />
               </div>
