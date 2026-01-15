@@ -7,14 +7,27 @@ const Hero: React.FC = () => {
       id="home"
       className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-neutral-950"
     >
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
+        src="/bg-loop.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70" />
+
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-amber-500/5 blur-[120px] rounded-full pointer-events-none animate-pulse" />
       <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-purple-900/10 blur-[100px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+      <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
 
         {/* LEFT CONTENT */}
-        <div className="flex-1 text-center lg:text-left z-10 animate-fade-in-up">
+        <div className="flex-1 text-center lg:text-left animate-fade-in-up">
 
           <h2 className="text-amber-500 font-bold tracking-widest uppercase mb-4 text-sm md:text-base">
             Reel Videographer & Editor
