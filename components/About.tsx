@@ -46,7 +46,7 @@ const About: React.FC = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16 items-center">
-          
+
           {/* Skills Grid */}
           <div className="flex-1 order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
@@ -58,9 +58,12 @@ const About: React.FC = () => {
                   <skill.icon
                     className="w-8 h-8 text-white mb-3 transition-all duration-300 group-hover:scale-110"
                   />
-                  <h3 className="text-white font-bold text-lg mb-1">
+
+                  {/* TITLE – AMBER */}
+                  <h3 className="text-amber-500 font-bold text-lg mb-1 group-hover:text-amber-400 transition-colors">
                     {skill.title}
                   </h3>
+
                   <p className="text-neutral-400 text-sm">{skill.desc}</p>
                 </div>
               ))}
@@ -90,7 +93,7 @@ const About: React.FC = () => {
                 translating a client’s vision into impactful short-form content that
                 feels polished, engaging, and platform-ready.
               </p>
-              </div>
+            </div>
 
             {/* Signature */}
             <div className="mt-8">
