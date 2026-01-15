@@ -15,19 +15,28 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav 
+    <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800 py-4' : 'bg-transparent py-6'
+        scrolled
+          ? `
+            bg-neutral-950/60
+            backdrop-blur-xl
+            border-b border-white/10
+            shadow-[0_8px_30px_rgba(0,0,0,0.3)]
+            py-4
+          `
+          : 'bg-transparent py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
+
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <img
-  src="/logo.png"
-  alt="Joltik Reelography Logo"
-  className="w-10 h-10 object-contain"
-/>
+            src="/logo.png"
+            alt="Joltik Reelography Logo"
+            className="w-10 h-10 object-contain"
+          />
 
           <div className="flex flex-col">
             <span className="text-xl font-bold uppercase tracking-widest text-white leading-none">
@@ -45,7 +54,7 @@ const Navbar: React.FC = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm uppercase tracking-wider text-neutral-300 hover:text-amber-500 transition-colors font-medium"
+              className="text-sm uppercase tracking-wider text-neutral-200 hover:text-amber-400 transition-colors font-medium"
             >
               {link.label}
             </a>
@@ -53,23 +62,33 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
-          className="md:hidden text-white hover:text-amber-500 transition-colors"
+        <button
+          className="md:hidden text-white hover:text-amber-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu – Glass Blur */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-neutral-900 border-b border-neutral-800 animate-fade-in-up">
+        <div
+          className="
+            md:hidden
+            absolute top-full left-0 w-full
+            bg-neutral-950/70
+            backdrop-blur-xl
+            border-b border-white/10
+            shadow-lg
+            animate-fade-in-up
+          "
+        >
           <div className="flex flex-col p-6 gap-4">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-lg uppercase tracking-wide text-neutral-300 hover:text-amber-500 transition-colors"
+                className="text-lg uppercase tracking-wide text-neutral-200 hover:text-amber-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
