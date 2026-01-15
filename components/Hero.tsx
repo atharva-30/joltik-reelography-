@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         muted
         playsInline
         preload="metadata"
-        className="absolute inset-0 w-full h-full object-cover opacity-25"
+        className="absolute inset-0 w-full h-full object-cover opacity-100"
       >
         <source src="/bg-loop.mp4" type="video/mp4" />
       </video>
