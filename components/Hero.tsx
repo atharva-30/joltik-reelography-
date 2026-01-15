@@ -30,21 +30,20 @@ const Hero: React.FC = () => {
             I am a professional reel videographer and editor specializing in cinematic, fast-paced reels for events, weddings, festivals, and commercial spaces. 
             My reels are designed to capture energy, emotion, and rhythm delivering impactful visuals that perform across digital platforms.
           </p>
-
-<div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start animate-fade-up">
+<div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
 
   {/* Primary CTA */}
   <a
     href="#work"
-    className="relative overflow-hidden px-9 py-4 bg-amber-600 text-black font-bold uppercase tracking-wider
-    rounded-lg
-    transition-all duration-300 ease-out
-    hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
-    shadow-[0_0_25px_rgba(245,158,11,0.35)]
-    before:absolute before:inset-0
-    before:bg-gradient-to-r before:from-transparent before:via-white/40 before:to-transparent
-    before:-translate-x-full hover:before:translate-x-full
-    before:transition-transform before:duration-700"
+    className="
+      px-9 py-4
+      bg-amber-600 text-black
+      font-bold uppercase tracking-wider
+      rounded-lg
+      transition-all duration-300 ease-out
+      hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
+      shadow-[0_0_25px_rgba(245,158,11,0.35)]
+    "
   >
     Check My Work
   </a>
@@ -52,16 +51,18 @@ const Hero: React.FC = () => {
   {/* Secondary CTA */}
   <a
     href="#contact"
-    className="px-9 py-4 rounded-lg
-    border border-neutral-700
-    text-white font-bold uppercase tracking-wider
-    transition-all duration-300 ease-out
-    hover:border-amber-500 hover:text-amber-400
-    hover:bg-neutral-900 hover:-translate-y-1 hover:scale-105"
+    className="
+      px-9 py-4
+      rounded-lg
+      border border-neutral-700
+      text-white font-bold uppercase tracking-wider
+      transition-all duration-300 ease-out
+      hover:border-amber-500 hover:text-amber-400
+      hover:bg-neutral-900 hover:scale-105 hover:-translate-y-1
+    "
   >
     Get In Touch
   </a>
-
 </div>
 
         {/* Right Video */}
