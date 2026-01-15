@@ -51,7 +51,7 @@ const About: React.FC = () => {
         muted
         playsInline
         preload="metadata"
-        className="absolute inset-0 w-full h-full object-cover opacity-15 hidden md:block"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 hidden md:block"
       >
         <source src="/bg-loop.mp4" type="video/mp4" />
       </video>
