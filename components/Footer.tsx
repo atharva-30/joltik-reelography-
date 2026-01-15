@@ -18,13 +18,13 @@ const Footer: React.FC = () => {
         <div className="flex gap-6">
             <a href="#" className="text-neutral-600 hover:text-white transition-colors">Instagram</a>
             <a href="#" className="text-neutral-600 hover:text-white transition-colors">YouTube</a>
-            <a href="#" className="text-neutral-600 hover:text-white transition-colors">LinkedIn</a>
+            <a href="#" className="text-neutral-600 hover:text-white transition-colors">Whatsapp</a>
         </div>
 
         <div className="w-full h-px bg-neutral-900 max-w-xs my-2"></div>
         
         <p className="text-neutral-600 text-xs">
-            Made by Atharva Raorane
+            Made by Google AI Studio & ChatGPT
         </p>
 
       </div>
