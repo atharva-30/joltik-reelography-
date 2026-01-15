@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
             <div className="space-y-4">
 
               <a
-                href="https://www.instagram.com/joltikreelography"
+                href="https://www.instagram.com/iamjoltik69"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-neutral-300 hover:text-amber-500 transition"
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
               </a>
 
               <a
-                href="https://www.youtube.com/@AtharvaRaoraneFilms"
+                href="https://www.youtube.com/@iamjoltik69"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-neutral-300 hover:text-amber-500 transition"
