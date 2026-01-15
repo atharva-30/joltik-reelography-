@@ -99,7 +99,7 @@ const About: React.FC = () => {
             <div className="mt-8">
               <div className="flex items-center gap-4">
                 <div className="h-px bg-neutral-700 flex-1" />
-                <span className="text-amber font-signature text-2xl">
+                <span className="text-amber-500 font-signature text-2xl">
                   Atharva Raorane
                 </span>
                 <div className="h-px bg-neutral-700 flex-1" />
