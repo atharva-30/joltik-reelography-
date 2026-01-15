@@ -31,22 +31,38 @@ const Hero: React.FC = () => {
             My reels are designed to capture energy, emotion, and rhythm delivering impactful visuals that perform across digital platforms.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a
-              href="#work"
-              className="px-8 py-4 bg-amber-600 hover:bg-amber-500 text-black font-bold uppercase tracking-wider transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(245,158,11,0.3)]"
-            >
-              Check My Work
-            </a>
+<div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start animate-fade-up">
 
-            <a
-              href="#contact"
-              className="px-8 py-4 border border-neutral-700 hover:border-amber-500 text-white font-bold uppercase tracking-wider transition-all duration-300 hover:bg-neutral-900"
-            >
-              Get In Touch
-            </a>
-          </div>
-        </div>
+  {/* Primary CTA */}
+  <a
+    href="#work"
+    className="relative overflow-hidden px-9 py-4 bg-amber-600 text-black font-bold uppercase tracking-wider
+    rounded-lg
+    transition-all duration-300 ease-out
+    hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
+    shadow-[0_0_25px_rgba(245,158,11,0.35)]
+    before:absolute before:inset-0
+    before:bg-gradient-to-r before:from-transparent before:via-white/40 before:to-transparent
+    before:-translate-x-full hover:before:translate-x-full
+    before:transition-transform before:duration-700"
+  >
+    Check My Work
+  </a>
+
+  {/* Secondary CTA */}
+  <a
+    href="#contact"
+    className="px-9 py-4 rounded-lg
+    border border-neutral-700
+    text-white font-bold uppercase tracking-wider
+    transition-all duration-300 ease-out
+    hover:border-amber-500 hover:text-amber-400
+    hover:bg-neutral-900 hover:-translate-y-1 hover:scale-105"
+  >
+    Get In Touch
+  </a>
+
+</div>
 
         {/* Right Video */}
         <div className="flex-1 relative w-full max-w-lg lg:max-w-xl group">
