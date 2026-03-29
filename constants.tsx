@@ -81,7 +81,7 @@ export const SERVICES: Service[] = [
       'Beat-synced cuts',
       'Highlight-driven flow',
     ],
-    priceRange: '₹2,500 – ₹4,500',
+    priceRange: ' ',
     icon: PartyPopper,
   },
   {
@@ -105,7 +105,7 @@ export const SERVICES: Service[] = [
       'Soft cinematic color tones',
       'Music-synced emotional moments',
     ],
-    priceRange: '₹3,500 – ₹5,000',
+    priceRange: ' ',
     icon: Video,
   },
   {
@@ -117,7 +117,7 @@ export const SERVICES: Service[] = [
       'Visual flow consistency',
       'Performance-driven pacing',
     ],
-    priceRange: '₹5,000 – ₹8,500',
+    priceRange: ' ',
     icon: Music,
   },
   {
@@ -129,7 +129,7 @@ export const SERVICES: Service[] = [
       'Wide-frame emphasis',
       'Informative text highlights',
     ],
-    priceRange: '₹3,500 – ₹5,000',
+    priceRange: ' ',
     icon: Building2,
   },
 ];
