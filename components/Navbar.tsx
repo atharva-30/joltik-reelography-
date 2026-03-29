@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
               Joltik
             </span>
             <span className="text-xs text-amber-500 tracking-[0.2em] group-hover:text-amber-400 transition-colors">
-              Reelography
+              REELOGRAPHY
             </span>
           </div>
         </a>
