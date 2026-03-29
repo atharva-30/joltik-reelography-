@@ -93,7 +93,7 @@ export const SERVICES: Service[] = [
       'Smooth transitions',
       'Attention-grabbing hooks',
     ],
-    priceRange: '₹2,000 – ₹3,500',
+    priceRange: ' ',
     icon: ShoppingBag,
   },
   {
