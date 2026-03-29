@@ -81,7 +81,8 @@ export const SERVICES: Service[] = [
       'Beat-synced cuts',
       'Highlight-driven flow',
     ],
-    priceRange: ' ',
+    priceRange: 'EVENT GALLERY',
+    link: 'https://instagram.com/iamjoltik69'
     icon: PartyPopper,
   },
   {
@@ -93,7 +94,8 @@ export const SERVICES: Service[] = [
       'Smooth transitions',
       'Attention-grabbing hooks',
     ],
-    priceRange: ' ',
+    priceRange: 'COMMERCIAL GALLERY',
+    link: 'https://instagram.com/iamjoltik69'
     icon: ShoppingBag,
   },
   {
@@ -105,7 +107,8 @@ export const SERVICES: Service[] = [
       'Soft cinematic color tones',
       'Music-synced emotional moments',
     ],
-    priceRange: ' ',
+    priceRange: 'WEDDING GALLERY',
+    link: 'https://instagram.com/iamjoltik69'
     icon: Video,
   },
   {
@@ -117,7 +120,8 @@ export const SERVICES: Service[] = [
       'Visual flow consistency',
       'Performance-driven pacing',
     ],
-    priceRange: ' ',
+    priceRange: 'MV GALLERY',
+    link: 'https://instagram.com/iamjoltik69'
     icon: Music,
   },
   {
@@ -129,7 +133,8 @@ export const SERVICES: Service[] = [
       'Wide-frame emphasis',
       'Informative text highlights',
     ],
-    priceRange: ' ',
+    priceRange: 'REALESTATE GALLERY',
+    link: 'https://instagram.com/iamjoltik69'
     icon: Building2,
   },
 ];
