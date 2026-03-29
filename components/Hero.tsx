@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
           <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-[4/5]">
 
             <iframe
-              src="https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=1&muted=1&loop=1&controls=0"
+              src="https://go.screenpal.com/player/cOeUI8nTtmX?autoplay=1&muted=1&loop=1&controls=0"
               className="w-full h-full object-cover"
               allow="autoplay; fullscreen"
               allowFullScreen
