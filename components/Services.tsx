@@ -37,7 +37,7 @@ const Services: React.FC = () => {
               </div>
 
               <div className="mt-auto pt-6 border-t border-neutral-900 flex justify-between items-center">
-                <span className="text-neutral-500 text-xs uppercase tracking-wider">Starting At</span>
+                <span className="text-neutral-500 text-xs uppercase tracking-wider"> </span>
                 <span className="text-amber-500 font-bold text-lg">{service.priceRange}</span>
               </div>
             </div>
