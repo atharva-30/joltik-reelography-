@@ -18,7 +18,8 @@ export interface Service {
   description: string;
   deliverables: string[];
   priceRange: string;
-  icon: LucideIcon;
+  link: string; // ✅ ADD THIS LINE
+  icon: any;
 }
 
 export interface Testimonial {
