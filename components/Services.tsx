@@ -44,7 +44,7 @@ const Services: React.FC = () => {
 
               <div className="mt-auto pt-6 border-t border-neutral-900 flex justify-between items-center">
                 <span className="text-neutral-500 text-xs uppercase tracking-wider">
-                  @iamjoltik69
+                  CLICK TO GET INTO GALLERY -->
                 </span>
 
                 <span className="text-amber-500 font-bold text-lg">
