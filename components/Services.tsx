@@ -46,10 +46,14 @@ const Services: React.FC = () => {
                 <span className="text-neutral-500 text-xs uppercase tracking-wider">
                   CLICK TO GET INTO GALLERY 
                 </span>
-
-                <span className="text-amber-500 font-bold text-lg">
+                <a
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-500 font-bold text-lg hover:underline"
+                >
                   {service.priceRange}
-                </span>
+                </a>
               </div>
             </div>
           ))}
