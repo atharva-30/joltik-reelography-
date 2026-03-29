@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
 
             <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
               <p className="text-white font-bold text-sm">Latest Showreel</p>
-              <p className="text-neutral-400 text-xs">2024 Edition</p>
+              <p className="text-neutral-400 text-xs">2026 Edition</p>
             </div>
 
           </div>
