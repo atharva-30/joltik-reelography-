@@ -18,7 +18,7 @@ export interface Service {
   description: string;
   deliverables: string[];
   priceRange: string;
-  link: string; // ✅ ADD THIS LINE
+  link: string; 
   icon: any;
 }
 
