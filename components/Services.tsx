@@ -37,7 +37,14 @@ const Services: React.FC = () => {
               </div>
 
               <div className="mt-auto pt-6 border-t border-neutral-900 flex justify-between items-center">
-                <span className="text-neutral-500 text-xs uppercase tracking-wider"> </span>
+                <a
+                  href="https://instagram.com/iamjoltik69"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-500 text-xs uppercase tracking-wider hover:text-white transition"
+                >
+                  @iamjoltik69
+                </a>
                 <span className="text-amber-500 font-bold text-lg">{service.priceRange}</span>
               </div>
             </div>
