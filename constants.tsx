@@ -36,8 +36,8 @@ export const PORTFOLIO_REELS = [
     title: 'Commercial Outlet Reels',
     videos: [
       'https://go.screenpal.com/player/cTlIb3nYOEd?autoplay=0&muted=1&loop=1&controls=1',
-      'https://go.screenpal.com/player/cTlIbqnYOEA?autoplay=0&muted=1&loop=1&controls=1',
-      'https://go.screenpal.com/player/cTlIXfnYO3k?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cOhFoontaXb?autoplay=0&muted=1&loop=1&controls=1',
+      'https://go.screenpal.com/player/cOhFoontaXD?autoplay=0&muted=1&loop=1&controls=1',
     ],
   },
   {
